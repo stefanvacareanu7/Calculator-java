@@ -29,3 +29,16 @@ public class ThemeLoader {
         }
     }
 }
+
+
+    public static Map<String, Theme> nope() {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        mapper.findAndRegisterModules();
+        try {
+            ThemeList themeList = mapper.readValue(new File("src/main/resources/application.yaml"), ThemeList.class);
+            return themeList.getThemesAsMap();
+        } catch (IOException e) {
+            return Collections.emptyMap();
+        }
+    }
+}

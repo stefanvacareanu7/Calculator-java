@@ -5,9 +5,10 @@ A very basic calculator application created using Java **Swing**.
 
 ## Thank You!
 Please ⭐️ this repo and share it with others
-
+do git commit --amend
 ## Requirements 🔧
 * Java 11 or higher.
+* try another ammend
 
 ## Installation 🔌
 1. Press the **Fork** button (top right the page) to save copy of this project on your account.
